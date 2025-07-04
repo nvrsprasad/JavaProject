@@ -1,0 +1,12 @@
+name: My first action
+
+on: push
+
+jobs:
+    clean_build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout
+          run: echo "Checking out the code"
+        - name: List the files
+          run: ls -lt
