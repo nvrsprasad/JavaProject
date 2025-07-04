@@ -8,5 +8,7 @@ jobs:
         steps:
         - name: checkout
           run: echo "Checking out the code"
-        - name: List the files
+        - name: check out files
+          uses: actions/checkout@v2
+        - name: list the files
           run: ls -lt
